@@ -33,8 +33,10 @@ Customize New Registration email
 ============================================================================================*/
 function custom_wp_new_user_notification_email( $wp_new_user_notification_email, $user, $blogname, $blogURL ) {
 	    $wp_new_user_notification_email['subject'] = sprintf( '[%s] New user %s registered.', $blogname, $user->user_login );
-	    $wp_new_user_notification_email['message'] = sprintf( "%s ( %s ) Thank you for registering  %s.", $user->user_login, $user->user_email, $blogname);
-	    $wp_new_user_notification_email['message'] .= __('To set your password, please request a reset from the following form:') . "\r\n\r\n";
+		$wp_new_user_notification_email['message'] = 'Hi,' . "\r\n\r\n";
+		$wp_new_user_notification_email['message'] .= sprintf( "Here's your login information for the new %s.", $blogname). "\r\n\r\n";
+		$wp_new_user_notification_email['message'] .= sprintf( "Username: %s", $user->user_login). "\r\n\r\n";
+	    $wp_new_user_notification_email['message'] .= __('To set your password, visit the following address:') . "\r\n\r\n";
 	    $wp_new_user_notification_email['message'] .= '<' . network_site_url("wp-login.php?action=lostpassword") . ">\r\n\r\n";
 		//$wp_new_user_notification_email['message'] .= wp_login_url() . "\r\n";
     return $wp_new_user_notification_email;
