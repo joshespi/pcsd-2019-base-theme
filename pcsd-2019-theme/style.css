@@ -254,7 +254,7 @@ left: -9999px;
 	text-align: center;
 	cursor: pointer;
 	background-color: #21395a;
-	background-image: url(https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2018-theme/assets/icons/search-lt.svg);
+	background-image: url(https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2019-theme/assets/icons/search-lt.svg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	color: transparent;
@@ -891,7 +891,7 @@ Directory styles
 link marking
 ================================================================================================================*/
 ul li.pdf {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/pdf.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/pdf.png)!important;
 }
 ul li.pdf a:after {
 	content:' - PDF Document';
@@ -902,7 +902,7 @@ a.pdf:after {
 	content:' (PDF)';
 }
 ul li.xls {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/xls.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/xls.png)!important;
 }
 ul li.xls a:after {
 	content:' - Excel Document';
@@ -913,10 +913,10 @@ a.xls:after {
 	content:' (XLS)';
 }
 ul li.ext {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/external-blue.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/external-blue.png)!important;
 }
 ul li.ext-white {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/external-white.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/external-white.png)!important;
 }
 ul li.ext a:after{
 	content:' - External Link';
@@ -930,7 +930,7 @@ a.ext:after {
 	width:.7em;
 	height:.7em;
 	background-size:contain;
-	background-image:url(../pcsd-2018-theme/assets/icons/external-blue.png);
+	background-image:url(../pcsd-2019-theme/assets/icons/external-blue.png);
 }
 a.ext-white:after {
 	content:' ';
@@ -939,13 +939,13 @@ a.ext-white:after {
 	width:.7em;
 	height:.7em;
 	background-size:contain;
-	background-image:url(../pcsd-2018-theme/assets/icons/external-white.png);
+	background-image:url(../pcsd-2019-theme/assets/icons/external-white.png);
 }
 ul li.intern, ul li.int {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/file-blue.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/file-blue.png)!important;
 }
 ul li.intern-white, ul li.int-white {
-	list-style-image:url(../pcsd-2018-theme/assets/icons/file-white.png)!important;
+	list-style-image:url(../pcsd-2019-theme/assets/icons/file-white.png)!important;
 }
 a.intern:after, a.int:after {
 	content:' ';
@@ -954,7 +954,7 @@ a.intern:after, a.int:after {
 	width:.7em;
 	height:.7em;
 	background-size:contain;
-	background-image:url(../pcsd-2018-theme/assets/icons/file-blue.svg);
+	background-image:url(../pcsd-2019-theme/assets/icons/file-blue.svg);
 }
 a.intern-white:after, a.int-white:after {
 	content:' ';
@@ -963,7 +963,7 @@ a.intern-white:after, a.int-white:after {
 	width:.7em;
 	height:.7em;
 	background-size:contain;
-	background-image:url(../pcsd-2018-theme/assets/icons/file-white.svg);
+	background-image:url(../pcsd-2019-theme/assets/icons/file-white.svg);
 }
 /*
 ================================================================================================================
@@ -974,14 +974,14 @@ accordion styles
 .accordion > li > a:before {
 	display:inline-block;
 	content: ' ';
-	background-image: url('https://globalassets.provo.edu/image/icons/accordion-down.svg');
+	background-image: url('../pcsd-2019-theme/assets/icons/accordion-down.svg');
 	background-size: 14px 14px;
 	height: 14px;
 	width: 14px;
 	margin-right: 10px;
 }
 .accordion > li.active > a:before {
-	background-image: url('https://globalassets.provo.edu/image/icons/accordion-up.svg');
+	background-image: url('../pcsd-2019-theme/assets/icons/accordion-up.svg');
 }
 .accordion > li li > a:before {
 	content:none;
