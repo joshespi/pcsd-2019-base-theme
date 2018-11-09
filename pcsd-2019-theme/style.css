@@ -1,0 +1,1053 @@
+/*
+	Theme Name: Provo City School District 2019
+	Author: District Web Team
+	Author URI: https://employee.provo.edu/technology/
+	Version: 1.0
+*/
+/*================================================================================================================
+CSS Reset
+================================================================================================================*/
+* {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+img {max-width:100%;height:auto;}
+p {margin:20px 0px 20px 0;}
+#mainContent p {
+	margin-left: 10px;
+}
+strong {font-weight:700;}
+em {font-style:italic;}
+/*================================================================================================================
+General Purpose Styles
+================================================================================================================*/
+.hidden {visibility: hidden;}
+ul,ol {margin-left:20px;}
+ol li,ul li {margin:.9375em 0 .9375em 1em;list-style-position:outside;}
+.noblt li, .noblt {list-style:none;}
+.disc {list-style: disc;}
+.left,.alignleft {
+	float:left;
+	margin-right:25px;
+	display:block;
+}
+.right,.alignright {
+	float:right;
+	margin-left:25px;
+	display:block;
+}
+.hidden {
+	position: absolute;
+	left: -9999px
+}
+.bottom{clear:both;}
+.center {
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.uppercase {
+	text-transform:uppercase;
+}
+video {
+	max-width:100%;
+	height: auto;
+}
+.clear {
+	width:100%;
+	clear:both;
+}
+.noclear {
+	clear:none;
+}
+::-webkit-scrollbar {
+	background:transparent;
+	width:5px;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#ccc;
+	border-radius:6px;
+}
+::-moz-scrollbar {
+	-webkit-appearance:none;
+	width:0;
+}
+iframe {
+	display:none;
+}
+.twoColumn {
+	width: 45%;
+	float: left;
+	padding: 1% 2.5% 1% 2.5%;
+}
+.threeColumn {
+	width: 29%;
+	float: left;
+	padding: 1% 2% 1% 2%;
+}
+.sectionIcon {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	right: 21px;
+	top: 55px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+table td, table th {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+table th {
+	font-weight: bold;
+}
+table td {
+	text-align: center;
+}
+.gallery-item {
+	max-height: 200px;
+	overflow: hidden;
+}
+.gallery-item img{
+
+}
+#mainContent form textarea, #mainContent form input {
+	border: #ccc solid 1px;
+	width: 100%;
+	display: inline;
+	padding: 5px 0 5px 10px;
+	margin-top: 10px;
+}
+#mainContent form input[type=submit] {
+	width: 25%;
+	float: right;
+}
+@media (max-width: 1170px) {
+	.threeColumn {width: 46%;}
+}
+@media (max-width: 940px) {
+	.threeColumn, .twoColumn {width: 96%;}
+}
+/*================================================================================================================
+Overall Structeral  Styles
+================================================================================================================*/
+#pcsdBranding {
+	height: 35px;
+	width: 100%;
+	position: fixed;
+	background-color: #dce3e8;
+	top:0;
+	z-index: 1000;
+}
+#mainHeader {
+	height: 106px;
+	padding: 20px 20px 5px 30px;
+	position: fixed;
+	top: 35px;
+	left: 0;
+	right: 0;
+	z-index:10;
+}
+#contentArea {
+	position: fixed;
+	top: 166px;
+	bottom: 95px;
+	width:calc(100% - 360px);
+	overflow-y: auto;
+	z-index:0;
+}
+#mainContent {
+	background-color: #fff;
+	padding-bottom: 40px;
+}
+
+#mainMenu {
+	position: fixed;
+	z-index:15;
+	width: 100%;
+	top: 140px;
+	box-shadow:0 3px 3px -2px #000;
+	left: 0;
+}
+#mainSidebar {
+	position: fixed;
+	width: 320px;
+	right: 0;
+	top: 166px;
+	bottom: 95px;
+	padding:10px 20px;
+	color:#dce2e8;
+	overflow-y:auto;
+}
+#mainFooter {
+	height:95px;
+	color:#dae1e7;
+	font-size:.6em;
+	line-height:1.2em;
+	padding:0 1%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:10;
+	right:0;
+}
+/*================================================================================================================
+Header Styles
+================================================================================================================*/
+#pcsdBranding img {
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+#pcsdBranding h1 {
+	margin-top: 7px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+}
+#pcsdBranding a {
+	color: #02365b;
+
+}
+#mainHeader aside {
+	position: absolute;
+	right: 0px;
+	top: 25px;
+	width: 670px;
+}
+#mainHeader .sociallinks {
+	position: absolute;
+	right: 470px;
+	top: -7px;
+}
+#mainHeader .sociallinks li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+#mainHeader .sociallinks li img {
+	width: 35px;
+}
+#mainHeader #cludo-search-form label {
+position: absolute;
+left: -9999px;
+}
+#mainHeader #cludo-search-form .search-input {
+	width: 400px;
+	height: 35px;
+	position: absolute;
+	right: 55px;
+	top: -7px;
+	padding: 0;
+	margin: 0;
+}
+#mainHeader #cludo-search-form .search-submit {
+	width: 35px;
+	height: 35px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: -7px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	background-color: #21395a;
+	background-image: url(https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2018-theme/assets/icons/search-lt.svg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+#mainHeader .contactinfo {
+	margin-top: 30px;
+	list-style: none;
+	text-align: right;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+#mainHeader .contactinfo li {
+	font-size: 10px;
+}
+#mainHeader .contactinfo li:first-child {
+	font-size: 10px;
+}
+#mainHeader .contactinfo li span.phone, #mainHeader .contactinfo li span.fax {
+	margin-left: 17px;
+}
+/*================================================================================================================
+Main Menu
+================================================================================================================*/
+.mobile-menu {
+	display: none;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 166px;
+	box-shadow: 1px 3px 5px #000;
+	background-color: #fff;
+}
+.mobile-menu ul {list-style: none;}
+#mainMenu #reveal-menu {
+	position:absolute;
+	top:-9999px;
+	left:-9999px;}
+#mainMenu .mobileMenu {display: none;}
+#mainMenu .mobileMenu img {width: 13px;margin-right: 7px;}
+#mainMenu > ul {
+	margin-top: 0px;
+	margin-left: 0;
+}
+#mainMenu > ul > li {
+	display: inline-block;
+	position: relative;
+	padding: 0 3%;
+	margin: 0;
+	text-transform: uppercase;
+}
+#mainMenu > ul > li:first-child {padding-left: 15px;}
+#mainMenu > ul > li:last-child {padding-right: 0;}
+nav > ul > li > a {
+	color: #fff;
+  	display: block;
+  	position: relative;
+  	padding: 0px 0;
+  	border-bottom: 3px solid transparent;
+}
+.mega-menu {
+	visibility: hidden;
+	opacity: 0;
+  	left: 0;
+  	position: fixed;
+  	text-align: left;
+  	width:100%;
+  	transition-delay: .5s;
+}
+.droppable:hover .mega-menu {
+	visibility:visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 500ms;
+	transition-delay: .5s;
+	}
+.mega-menu .dropDownColumn {
+	width: 30%;
+	display: inline-block;
+	padding: 1.5%;
+	text-transform: none;
+	vertical-align: top;
+}
+.mega-menu h2 {
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.mega-menu h3 img {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	margin-bottom: -4px;
+}
+.mega-menu .dropDownColumn ul li {list-style: none;}
+h2 img {
+	width: 27px;
+	height: 27px;
+	margin-right: 10px;
+}
+@media (max-height: 1066px) {
+	.mega-menu .dropDownColumn {width: 30%;padding: 1%;}
+	.mega-menu .dropDownColumn ul {margin-left: 30px;}
+	.mega-menu .dropDownColumn ul li {margin-left: 0;}
+}
+@media (max-height: 780px) {
+	.dropDownColumn ul li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+/*================================================================================================================
+BreadCrumbs
+================================================================================================================*/
+#breadcrumbs {
+    font-size: .7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    list-style: none;
+    overflow: hidden;
+}
+#breadcrumbs li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+#breadcrumbs a {color: #fff;}
+/*================================================================================================================
+Front Page Alert
+================================================================================================================*/
+#alerts {
+	background-color: red;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+}
+#alerts h1 {
+	color: #fff;
+}
+#alerts #closeAlert {
+	position: absolute;
+	top: 35px;
+	right: 30px;
+	background-color: transparent;
+	height: 25px;
+	width: 25px;
+
+}
+/*================================================================================================================
+Slider
+================================================================================================================*/
+#announcments {
+	background-color: #fff;
+}
+#announcments h1 {
+	position: absolute;
+	left: -9999px
+}
+.slide {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: relative;
+	height: 500px;
+}
+.slide .slide-text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color:#ccd5df;
+	background-color:rgba(225,233,244,0.9);
+	padding: 5px 5px 10px 15px;
+
+}
+@media (max-width: 1200px) {
+	.slide {
+		background-size: contain;
+		background-position: 0 0;
+		height: auto;
+	}
+	.slide .slide-text {
+		position: relative;
+		margin-top: 50%;
+		min-height: 130px;
+	}
+}
+/*
+		.slide {
+		position: relative;
+		background-size: contain;
+		background-position: 0 0;
+		height: auto;
+	}
+	.slide .slide-text {
+		position: relative;
+		margin-top: 50%;
+		min-height: 115px;
+	}
+*/
+/*================================================================================================================
+Post List
+================================================================================================================*/
+.postgrid {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.postgrid > h1 {
+	padding-left: 5%;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.postgrid .post {
+	width:27.33%;
+	padding:20px 3%;
+}
+.postmeta {
+	max-width:100%;
+}
+#mainContent .post .postmeta h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.postmeta ul {
+	margin:0;
+	max-width:100%;
+}
+.postmeta ul li {
+	display:inline;
+	margin:0;
+	list-style:none;
+	font-size:.8em;
+	margin-right:2px;
+}
+.postmeta ul li img {
+	width:10px;
+	margin-bottom:0;
+	margin-right:5px;
+	margin-left:2px;
+}
+.postgrid .post .featured-image {
+	width:100%;
+	height:0;
+	padding-top: 50%;
+	overflow:hidden;
+	background-color: #ffffff;
+}
+.postgrid .post .featured-image img {
+	margin:0 auto;
+	margin-top: -50%;
+	display:block;
+	width:100%;
+}
+.postgrid .post p {margin-top: 0;}
+.postgrid .archiveNav {
+	clear:both;
+	width:100%;
+	text-align:right;
+	padding:0;
+}
+#mainContent .archiveNav .page-numbers:first-child {
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+}
+#mainContent .archiveNav .page-numbers:last-child {
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+#mainContent .archiveNav .page-numbers {
+	padding:5px 10px;
+	background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+	background-repeat:repeat-x;
+	border:solid 1px #ccc;
+	text-shadow:0 1px 0 #fff;
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
+	display:inline-block;
+	margin:0 0 0 -5px;
+}
+#mainContent .archiveNav .current {
+	padding-top:6px;
+	padding-bottom:4px;
+	font-size:15px;
+}
+.featured-image-full {
+    float: right;
+    max-width: 50%;
+    overflow: visible;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+@media (max-width: 1054px) {
+	.postgrid .post {
+		width: 44%;
+	}
+}
+@media (max-width: 840px) {
+	.postgrid .post {
+		width: 94%;
+	}
+}
+/*================================================================================================================
+Pages, Single Posts
+================================================================================================================*/
+.lastmodified {
+	float: right;
+	font-size: 14px;
+}
+.single-post, .single-page {
+	padding: 10px 20px 20px 20px;
+}
+.single-post h2, .single-post h3, .single-post h4 {
+	clear: none;
+}
+/*--------------------------------------------------------------------
+Search Results Page
+--------------------------------------------------------------------
+.searchResults {
+	display:flex;
+	flex-wrap:wrap;
+	padding: 0 20px 0 20px;
+}
+.searchResults .post {
+	width: 100%;
+	padding-left: 35px;
+}
+#mainContent.searchResults .post .postmeta h2 {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+#mainContent.searchResults .post p {
+	margin-top: 10px;
+}
+*/
+
+/*
+--------------------------------------------------------------------
+Cludo Search
+--------------------------------------------------------------------
+*/
+.powered-by-cludo {
+	display: none!important;
+}
+#search_autocomplete {
+	background-color: #eee;
+	position: absolute;
+	right: 55px;
+	top: 28px;
+	width: 400px;
+	z-index: 200;
+	box-shadow: 0 10px 7px -5px black; 
+}
+#search_autocomplete li{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 10px;
+}
+#search_autocomplete li:hover,#search_autocomplete li:active,#search_autocomplete li:focus,#search_autocomplete li:focus-within {
+	background-color: #ccc;
+}
+@media (max-width: 617px) {
+	#search_autocomplete {
+		display: none;
+	}
+}
+/*
+--------------------------------------------------------------------
+404 styles
+--------------------------------------------------------------------
+*/
+#cludo-404 {
+	width: 40%;
+	margin: 0!important;
+}
+#cludo-404 h3 {
+	text-transform: none!important;
+}
+#cludo-404 .cludo-result-item {
+	font-size: 12px;
+}
+#cludo-404 .cludo-result-item-title {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+#image404 {
+	width: 25%;
+	position: absolute;
+	right: 15px;
+}
+.powered-by {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------------
+Tile styles
+--------------------------------------------------------------------*/
+.tiles {
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+.tiles .tile {
+	width:27.33%;
+	padding:20px 3%;
+}
+/*--------------------------------------------------------------------
+featured Gallery styles
+--------------------------------------------------------------------*/
+.featured-gallery {
+	width:100%;
+	max-width:600px;
+	float:right;
+	background-color:#ccc;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+.featured-for {
+	max-width:600px;
+	max-height:400px;
+}
+.featured-for img {
+	width:auto;
+	height:auto;
+	max-height:100%;
+	max-width:100%;
+}
+.featured-nav {
+	max-height:112px;
+}
+.featured-nav img {
+	border:2px solid #000;
+	vertical-align:middle;
+	height:auto;
+	width:auto;
+	max-height:109px;
+	max-width:167px;
+}
+.featured-nav .slick-center {
+	border:2px solid #e16c16;
+}
+/*--------------------------------------------------------------------
+Gallery Page template styles
+--------------------------------------------------------------------*/
+.gallery-page .page-gallery-selection {
+	width: 20%;
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 5px 10px 5px;
+	border:2px solid #fff;
+}
+.gallery-page .slick-center {
+	border:2px solid #e16c16;
+}
+/*================================================================================================================
+Sidebar
+================================================================================================================*/
+#mainSidebar h1 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#mainSidebar h2 {
+	background-color: #fff;
+	padding: 5px 0 5px 5px;
+}
+#mainSidebar section {margin-bottom: 70px;}
+#mainSidebar a {color: #fff;}
+#mainSidebar a:hover, .imagelist li a:hover span {color: #fc7e02;}
+#mainSidebar .post .postmeta h1 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+#mainSidebar .post .postmeta ul {
+	position: absolute;
+	right: 55px;
+	margin-top: -5px;
+}
+#mainSidebar .post .postmeta ul li {
+	font-size: .8em;
+}
+#mainSidebar .post p {
+	margin-top: 35px;
+}
+#mainSidebar .post .readmore {
+	margin: 0;
+	text-align: right;
+}
+#mainSidebar .imagelist {
+    list-style: none;
+    margin-left: 0;
+}
+#mainSidebar ul li {
+    font-size: 1em;
+    margin-left: 0;
+}
+.imagelist {margin-left: 0;}
+.imagelist li {
+	list-style: none;
+	margin-left: 0;
+}
+.imagelist li img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.imagelist li a span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px;
+}
+.calendar-agenda a {float: right; margin-top: 20px;}
+/*================================================================================================================
+Footer
+================================================================================================================*/
+#teacherAccess {
+	position: absolute;
+	z-index: 1;
+	margin-top: -38px;
+	border-radius: 3px;
+	padding: 0 20px 0 10px;
+}
+#teacherAccess .teacherActivate {
+	font-size: 2em;
+	padding: 10px 0 10px 10px;
+}
+#teacherAccess a {color: #fff;}
+#teacherAccess ul {display: none;}
+#teacherAccess ul li {font-size: 1.5em;}
+#teacherAccess ul li a:hover {color: #fc7e02;}
+#mainFooter p {
+	margin:15px 15px 15px 0;
+}
+#mainFooter .feedback {
+	text-align:right;
+	margin-top:-10px;
+}
+#mainFooter .feedback a {
+	color:#dae1e7;
+	font-size:16px;
+}
+#mainFooter .feedback a:hover {
+	color:#df6d1b;
+	text-decoration:underline;
+}
+#teacherAccess .employeelink {
+	background-color: #dce3e8;
+	margin-right: -16px;
+	margin-left: -6px;
+	padding: 5px 15px 5px 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+#teacherAccess .employeelink img {
+	width: 50px;
+	margin-right: 5px;
+}
+#teacherAccess .employeelink a {
+	color: #02224f;
+}
+/*================================================================================================================
+Directory styles
+================================================================================================================*/
+.staff-member-listing {
+	display: flex;
+	flex-wrap: wrap;
+}
+.staff-member-listing .personalvCard {
+	width: 16%;
+	padding: 20px 2%;
+	position: relative;
+}
+.staff-member-listing .personalvCard img {
+	margin: 0 auto;
+	display: block;
+	float: none;
+	height: 150px;
+}
+.staff-member-listing .personalvCard ul {
+	margin-left: 0;
+}
+.staff-member-listing .personalvCard ul li {
+	list-style: none;
+	margin: 5px 0 5px 0;
+	font-size: .7em;
+	text-align: center;
+}
+.staff-member-listing .personalvCard .title {
+	font-style: italic;
+	line-height: 15px;
+}
+.staff-member-listing .personalvCard .name {
+	font-size: 1em;
+	font-weight: 700;
+}
+#mainSidebar #sidebar-filter {
+    display: inline;
+    margin-top: 20px;
+    width: 75%;
+}
+#mainSidebar .directorySearchIcon {
+    width: 21px;
+    height: 21px;
+    margin-bottom: -5px;
+}
+.syllabus {
+	float: right;
+	border: 1px solid #ccc;
+	padding: 0 20px 0 20px;
+	margin-left: 20px;
+}
+#content .syllabus ul li {margin-left: 20px;}
+@media (max-width: 1100px) {
+	.staff-member-listing .personalvCard { width: 21%;}
+}
+@media (max-width: 960px) {
+	.staff-member-listing .personalvCard { width: 29%;}
+}
+@media (max-width: 822px) {
+	.staff-member-listing .personalvCard { width: 46%;}
+}
+@media (max-width: 740px) {
+	.staff-member-listing .personalvCard { width: 29%;}
+}
+@media (max-width: 484px) {
+	.staff-member-listing .personalvCard { width: 46%;}
+}
+/*================================================================================================================
+link marking
+================================================================================================================*/
+ul li.pdf {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/pdf.png)!important;
+}
+ul li.pdf a:after {
+	content:' - PDF Document';
+	position:absolute;
+	left:-9999px;
+}
+a.pdf:after {
+	content:' (PDF)';
+}
+ul li.xls {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/xls.png)!important;
+}
+ul li.xls a:after {
+	content:' - Excel Document';
+	position:absolute;
+	left:-9999px;
+}
+a.xls:after {
+	content:' (XLS)';
+}
+ul li.ext {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/external-blue.png)!important;
+}
+ul li.ext-white {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/external-white.png)!important;
+}
+ul li.ext a:after{
+	content:' - External Link';
+	position:absolute;
+	left:-9999px;
+}
+a.ext:after {
+	content:' ';
+	display:inline-block;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2018-theme/assets/icons/external-blue.png);
+}
+a.ext-white:after {
+	content:' ';
+	display:inline-block;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2018-theme/assets/icons/external-white.png);
+}
+ul li.intern, ul li.int {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/file-blue.png)!important;
+}
+ul li.intern-white, ul li.int-white {
+	list-style-image:url(../pcsd-2018-theme/assets/icons/file-white.png)!important;
+}
+a.intern:after, a.int:after {
+	content:' ';
+	display:inline-block;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2018-theme/assets/icons/file-blue.svg);
+}
+a.intern-white:after, a.int-white:after {
+	content:' ';
+	display:inline-block;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2018-theme/assets/icons/file-white.svg);
+}
+/*
+================================================================================================================
+accordion styles
+================================================================================================================
+*/
+.accordion {list-style: none;margin-left: 0;}
+.accordion > li > a:before {
+	display:inline-block;
+	content: ' ';
+	background-image: url('https://globalassets.provo.edu/image/icons/accordion-down.svg');
+	background-size: 14px 14px;
+	height: 14px;
+	width: 14px;
+	margin-right: 10px;
+}
+.accordion > li.active > a:before {
+	background-image: url('https://globalassets.provo.edu/image/icons/accordion-up.svg');
+}
+.accordion > li li > a:before {
+	content:none;
+}
+.accordion li .accordion-content {display: none;}
+.accordion li.active .accordion-content {
+	display: block;
+	transition: all .35s;
+}
+/*===============================================================================================================
+low height viewport
+================================================================================================================*/
+@media (max-height: 640px) {
+	body {
+		background-color: #02224f;
+	}
+	#contentArea {
+		position: static;
+		float: left;
+		margin-top: 160px;
+	}
+	#mainSidebar {
+		position: static;
+		float: right;
+		margin-top: 166px;
+	}
+	#mainFooter {
+		position: static;
+		clear: both;
+		padding-top: 5px;
+	}
+}
+@media (max-height: 544px) {
+	#pcsdBranding {
+		position: static;
+	}
+	#pcsdBranding h1 {
+		margin-top: 7px;
+		left: 100px;
+		position: absolute;
+		display: block;
+	}
+	#mainHeader {
+		position: relative;
+		top: 0;
+		height: 80px;
+	}
+	#mainMenu {
+		position: absolute;
+		top: 100px!important;
+
+	}
+	.desktop-menu {display: none;}
+	#mainMenu .mobileMenu {display: block;color: #fff;margin-left: 10px;font-size: 16px;}
+	#reveal-menu[type=checkbox]:checked ~ .mobile-menu {display: block;}
+	#contentArea {
+		margin-top: 18px;
+	}
+	.mobile-menu {
+		z-index: 3000;
+		position: absolute;
+		width: 100vw;
+		
+		
+	}
+	#mainSidebar {
+		margin-top: 18px;
+	}
+}
