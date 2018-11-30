@@ -59,23 +59,7 @@ close alert
 jQuery("#closeAlert").click(function() {
 	jQuery("#alerts").css("display", "none");
 });
-/*
-=============================================================================================================
-Teacher Access menu
-=============================================================================================================
-*/
-jQuery(".teacherActivate").click(function() {
-	return false;
-});
-jQuery(".teacherActivate").click(function() {
-		if(jQuery("#teacherAccess").css("margin-top") != "-320px") {
-			jQuery("#teacherAccess").css("margin-top", "-320px");
-			jQuery("#teacherAccess ul").css("display", "block");
-		} else {
-			jQuery("#teacherAccess").css("margin-top", "-38px");
-			jQuery("#teacherAccess ul").css("display", "none");
-		}
-});
+
 /*
 =============================================================================================================
 Directory Live Page Search

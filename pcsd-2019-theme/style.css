@@ -253,7 +253,6 @@ left: -9999px;
 	margin: 0;
 	text-align: center;
 	cursor: pointer;
-	background-color: #21395a;
 	background-image: url(https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2019-theme/assets/icons/search-lt.svg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -356,6 +355,9 @@ h2 img {
 	.mega-menu .dropDownColumn {width: 30%;padding: 1%;}
 	.mega-menu .dropDownColumn ul {margin-left: 30px;}
 	.mega-menu .dropDownColumn ul li {margin-left: 0;}
+}
+@media (max-width: 886px) {
+	#mainMenu {height: 25px;}
 }
 @media (max-height: 780px) {
 	.dropDownColumn ul li {
@@ -994,10 +996,7 @@ accordion styles
 /*===============================================================================================================
 low height viewport
 ================================================================================================================*/
-@media (max-height: 640px) {
-	body {
-		background-color: #02224f;
-	}
+@media (max-height: 720px) {
 	#contentArea {
 		position: static;
 		float: left;
