@@ -552,13 +552,173 @@ Post List
     margin-left: 30px;
     margin-bottom: 20px;
 }
+/*================================================================================================================
+News Slider With Tiles
+================================================================================================================*/
+.tile-page .currentContent {
+	background-color:#fff;
+	width:46%;
+	height:400px;
+	padding:0 2%;
+	display:inline-block;
+	position:relative;
+	overflow-y:scroll;
+}
+.no-slider .currentContent {
+	width: 96%;
+}
+.tile-page .slider {
+	width:50%;
+	float:right;
+}
+.tile-page .square2Image {
+	width:50%;
+	float:right;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	height:400px;
+}
+.tile-page .slider .slide {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	height:400px;
+}
+.tile-page .slider .slide span {
+	display:block;
+	color:#000;
+	position:absolute;
+	bottom:0;
+	padding-left:0;
+	padding-right:0;
+	padding-bottom:10px;
+	height:auto;/* changed from 125px to auto so that the slider span was only as big as it needed to be 11-16-17*/
+	background-color:#ccd5df;
+	background-color:rgba(204,213,223,0.9);
+}
+.tile-page .slider .slide span h2,.tile-page .slider .slide span p {
+	max-width:97%;
+	padding-left:15px;
+	padding-right:10px;
+	margin:5px 0;
+}
+.tile-page .square2Image span {
+	display:block;
+	padding:10px;
+	max-width:100%;
+	margin-top:200px;
+	background-color:#ccd5df;
+	background-color:rgba(204,213,223,0.9);
+}
+.tile-page .square2Image span:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+.tile-page .square2Image span img {
+	float:left;
+	margin:10px 15px 0;
+	width:60px;
+}
+.tile-page .square2Image span .slidertext {
+	float:left;
+	width:80%;
+}
+.tile-page .square2Image span h2,.tile-page .square2Image span p {
+	width:100%;
+	padding:0;
+	margin:0;
+	clear:none;
+}
+.tile-page .tiles {
+	clear:both;
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:-8px;
+}
+/*.tile-page .departmentResources .threeColumn {
+	padding-top:25px;
+	padding-bottom:25px;
+	vertical-align:top;
+}
+.tile-page .departmentResources .threeColumn ul {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.tile-page .departmentResources .threeColumn ul li {
+	margin:0;
+}
+.tile-page .departmentResources .threeColumn:nth-child(even) {
+	background-color:#f1f5f9;
+}
+.tile-page .departmentResources .threeColumn:nth-child(odd) {
+	background-color:#dbe1e7;
+
+#mainContent .tile-page .full-height-images .featured-image {
+	height:auto;
+}
+.tile-page .departmentResources .menu-Tile ul {
+	list-style:none;
+	margin-left:0;
+	width:100%;
+}
+.tile-page .departmentResources .menu-Tile ul li {
+	list-style-position:inside;
+	margin:5px 0;
+	padding:5px 5px 5px 10px;
+}
+.tile-page .departmentResources .menu-Tile ul li a:hover {
+	color:#df6d1b;
+	text-decoration:underline;
+}
+.tile-page .departmentResources .full-tile {
+	width:96%;
+}
+*/
+.currentContent .content-featured-image {
+	width:calc(100% - 35px);
+	height:150px;
+	position:absolute;
+	overflow:hidden;
+	bottom:10px;
+	left:10px;
+}
+.currentContent .content-featured-image img {
+	width:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:calc(200px - 75%);
+	margin-left:-50%;
+}
+
+/*--------------------------------------------------------------------
+Tile styles
+--------------------------------------------------------------------*/
+.tiles {
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+.tiles .tile {
+	width:27.33%;
+	padding:20px 3%;
+}
+
 @media (max-width: 1054px) {
-	.postgrid .post {
+	.postgrid .post, .tiles .tile {
 		width: 44%;
+	}
+	.tile-page .currentContent {
+		width: 100%;
+	}
+	.tile-page .slider {
+		width: 100%;
 	}
 }
 @media (max-width: 840px) {
-	.postgrid .post {
+	.postgrid .post, .tiles .tile {
 		width: 94%;
 	}
 }
