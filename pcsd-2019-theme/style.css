@@ -1011,6 +1011,7 @@ low height viewport
 		position: static;
 		clear: both;
 		padding-top: 5px;
+		height: auto;
 	}
 }
 @media (max-height: 544px) {
