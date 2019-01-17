@@ -124,6 +124,21 @@ table td {
 	width: 25%;
 	float: right;
 }
+.flexLinkList ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flexLinkList ul li {
+	width: 25%;
+	padding-left: 3%;
+	padding-right: 3%;
+	list-style: none;
+	text-align: center;
+}
+.flexLinkList ul li img {
+	width: 100%;
+	float: right;
+}
 @media (max-width: 1170px) {
 	.threeColumn {width: 46%;}
 }
