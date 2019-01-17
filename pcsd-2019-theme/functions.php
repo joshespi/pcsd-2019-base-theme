@@ -127,14 +127,14 @@ function pcsd_tutorial_admin_page(){
 			<h2>Tutorials For Wordpress</h2>
 			<h3>Posts &amp; Pages</h3>
 				<ul>
-					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-new-post-instructions.pdf">New Post Instructions</a></li>
+					<li><a href="https://provo.edu/wp-content/uploads/2018/12/12-12-2018-new-post-instructions-updated-for-2019-theme.pdf">New Post Instructions</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-formatting-your-post.pdf">Formatting Your Post</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-201-adding-external-links.pdf">Adding External Links</a></li>
 				</ul>
 			<h3>Images &amp; Documents</h3>
 				<ul>
-					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-image-resources.pdf">Image Resources</a></li>
-					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-resizing-images-using-mac-preview.pdf">Resizing Your Image Using Mac Preview</a></li>
+					<li><a href="https://provo.edu/wp-content/uploads/2018/12/12-12-2018-image-resources-updated-for-2019-theme.pdf">Image Resources</a></li>
+					
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-adding-pdfs.pdf">Adding PDFs</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-file-naming-standards.pdf">File Naming Standards</a></li>
 				</ul>
@@ -182,6 +182,7 @@ add_action( 'post-upload-ui', 'pcsd_media_upload_tips' );
 function pcsd_media_upload_tips(){
 	?>
 		<h2>Your file will be processed by the server. This may take a few minutes depending on the size of the file.</h2>
+		<h3>Allowed File types: jpeg, mp3, mp4, pdf, mpeg, png, mov, wma</h3>
 	<?php
 };
 
