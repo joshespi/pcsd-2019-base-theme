@@ -112,7 +112,6 @@ table td {
 	text-align: center;
 }
 .gallery-item {
-	max-height: 200px;
 	overflow: hidden;
 }
 .gallery-item img{
@@ -129,6 +128,7 @@ table td {
 	width: 25%;
 	float: right;
 }
+.simcal-default-calendar-grid .simcal-day-number {color: #fff;}
 .flexLinkList ul {
 	display: flex;
 	flex-wrap: wrap;
