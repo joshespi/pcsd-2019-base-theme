@@ -35,6 +35,11 @@ ol li,ul li {margin:.9375em 0 .9375em 1em;list-style-position:outside;}
 	margin-left:25px;
 	display:block;
 }
+.center, .aligncenter {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
 .hidden {
 	position: absolute;
 	left: -9999px
