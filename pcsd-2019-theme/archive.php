@@ -2,7 +2,7 @@
 		<main id="contentArea">
 			<?php custom_breadcrumbs(); ?>
 			<section id="mainContent" class="postgrid newsBlog">
-				<h1>Timpview News : <?php single_cat_title(); ?></h1>
+				<h1><?php echo get_bloginfo( 'name' ); ?> News : <?php single_cat_title(); ?></h1>
 					<?php
 						if(have_posts()) :
 							while (have_posts()) : the_post();?>
