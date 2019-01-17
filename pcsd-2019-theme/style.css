@@ -253,7 +253,7 @@ left: -9999px;
 	margin: 0;
 	text-align: center;
 	cursor: pointer;
-	background-image: url(https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2019-theme/assets/icons/search-lt.svg);
+	background-image: url(assets/icons/search-lt.svg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	color: transparent;
@@ -432,7 +432,7 @@ Slider
 	padding: 5px 5px 10px 15px;
 
 }
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
 	.slide {
 		background-size: contain;
 		background-position: 0 0;
