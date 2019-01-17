@@ -775,6 +775,8 @@ Sidebar
     width: 180px;
 }
 .calendar-agenda a {float: right; margin-top: 20px;}
+#mainSidebar .simcal-default-calendar-list .simcal-event-details p {margin: 0 0 0!important;}
+#mainSidebar .simcal-default-calendar-list .simcal-event-details br {display: block;margin:0;}
 /*================================================================================================================
 Footer
 ================================================================================================================*/
@@ -993,6 +995,7 @@ accordion styles
 	display: block;
 	transition: all .35s;
 }
+
 /*===============================================================================================================
 low height viewport
 ================================================================================================================*/
