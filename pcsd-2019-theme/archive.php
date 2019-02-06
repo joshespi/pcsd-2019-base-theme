@@ -4,8 +4,11 @@
 			<section id="mainContent" class="postgrid newsBlog">
 				<h1><?php echo get_bloginfo( 'name' ); ?> News : <?php single_cat_title(); ?></h1>
 					<?php
-						if(have_posts()) :
-							while (have_posts()) : the_post();?>
+						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+						$category = get_the_category();
+						$the_query = new WP_Query( array( 'posts_per_page' => 9 ,'category_name' => $category[0]->slug , 'paged'  => $paged) );
+						if($the_query->have_posts()) :
+							while ($the_query->have_posts()) : $the_query->the_post();?>
 						   		<article class="post">
 					   				<a href="<?php the_permalink(); ?>">
 									   	<div class="featured-image">
