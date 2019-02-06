@@ -566,10 +566,11 @@ Post List
 	font-size:15px;
 }
 .featured-image-full {
-    float: right;
-    max-width: 50%;
-    overflow: visible;
-    margin-left: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 500px;
     margin-bottom: 20px;
 }
 /*================================================================================================================
@@ -905,6 +906,7 @@ Sidebar
 	background-color: #fff;
 	padding: 5px 0 5px 5px;
 }
+#mainSidebar .postmeta h2 {background-color: transparent; color: #fff;}
 #mainSidebar section {margin-bottom: 70px;}
 #mainSidebar a {color: #fff;}
 #mainSidebar a:hover, .imagelist li a:hover span {color: #fc7e02;}
