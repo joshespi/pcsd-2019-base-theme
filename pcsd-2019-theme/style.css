@@ -1074,7 +1074,87 @@ Directory styles
 /*================================================================================================================
 link marking
 ================================================================================================================*/
+/*For adding hidden into for listed links*/
+#mainContent ul li a:after {
+	content:' - External Link';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent ul li a[href*="provo.edu"]:after {
+	content:' - Internal Link';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent ul li a[href*="pdf"]:after {
+	content:' - PDF Document';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent ul li a[href*="xls"]:after {
+	content:' - XLS Document';
+	position:absolute;
+	left:-9999px;
+}
+/*For adding hidden into for in line links*/
+#mainContent p a:before {
+	content:'External Link - ';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent p a[href*="provo.edu"]:before {
+	content:'Internal Link - ';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent p a[href*="pdf"]:before {
+	content:'PDF Document - ';
+	position:absolute;
+	left:-9999px;
+}
+#mainContent p a[href*="xls"]:before {
+	content:'XLS Document - ';
+	position:absolute;
+	left:-9999px;
+}
+/*For adding icon into for in line links*/
+#mainContent p a:after {
+	content:' ';
+	display: inline;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2019-theme/assets/icons/external-white.png);
+}
+#mainContent p a[href*="provo.edu"]:after {
+	content:' ';
+	display:inline-block;
+	margin-left:3px;
+	width:.7em;
+	height:.7em;
+	background-size:contain;
+	background-image:url(../pcsd-2019-theme/assets/icons/file-blue.svg);
+}
+#mainContent p a[href*="pdf"]:after {
+	content:' (PDF)';
+}
+#mainContent p a[href*="xls"]:after {
+	content:' (XLS)';
+}
+/* these are so that the listed links have a the right icon once the javascript gives them a class*/
+ul li.int {
+	list-style-image:url(../pcsd-2019-theme/assets/icons/file-blue.png)!important;
+}
 ul li.pdf {
+	list-style-image:url(../pcsd-2019-theme/assets/icons/pdf.png)!important;
+}
+ul li.xls {
+	list-style-image:url(../pcsd-2019-theme/assets/icons/xls.png)!important;
+}
+ul li.ext {
+	list-style-image:url(../pcsd-2019-theme/assets/icons/external-blue.png)!important;
+}
+/*ul li.pdf {
 	list-style-image:url(../pcsd-2019-theme/assets/icons/pdf.png)!important;
 }
 ul li.pdf a:after {
@@ -1149,6 +1229,7 @@ a.intern-white:after, a.int-white:after {
 	background-size:contain;
 	background-image:url(../pcsd-2019-theme/assets/icons/file-white.svg);
 }
+*/
 /*
 ================================================================================================================
 accordion styles
