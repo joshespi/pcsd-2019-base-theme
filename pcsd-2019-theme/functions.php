@@ -529,4 +529,18 @@ function peCameraCode() {
     	return $url;
 }
 add_shortcode('pe-construction-image', 'peCameraCode');
+*/
+//disable open in a new tab/window checkbox in TinyMCE
+function disable_open_new_window() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('input#link-target-checkbox').prop('checked', false);
+            $('#wp-link .link-target').css('visibility', 'hidden');
+        });
+    </script>
+    <?php
+}
+add_action ('after_wp_tiny_mce', 'disable_open_new_window');
+
 
