@@ -543,4 +543,35 @@ function disable_open_new_window() {
 }
 add_action ('after_wp_tiny_mce', 'disable_open_new_window');
 
+//================================Display Modified Date on Dashboard for Posts===================================
 
+// Register Modified Date Column for both posts & pages
+function modified_column_register( $columns ) {
+	$columns['Modified'] = __( 'Modified Date', 'show_modified_date_in_admin_lists' );
+	return $columns;
+}
+add_filter( 'manage_posts_columns', 'modified_column_register' );
+add_filter( 'manage_pages_columns', 'modified_column_register' );
+
+function modified_column_display( $column_name, $post_id ) {
+	switch ( $column_name ) {
+	case 'Modified':
+		global $post; 
+	       	echo '<p class="mod-date">';
+	       	echo '<em>'.get_the_modified_date().' '.get_the_modified_time().'</em><br />';
+			echo '<small>' . esc_html__( 'by ', 'show_modified_date_in_admin_lists' ) . '<strong>'.get_the_modified_author().'<strong></small>';
+			echo '</p>';
+		break; // end all case breaks
+	}
+}
+add_action( 'manage_posts_custom_column', 'modified_column_display', 10, 2 );
+add_action( 'manage_pages_custom_column', 'modified_column_display', 10, 2 );
+
+function modified_column_register_sortable( $columns ) {
+	$columns['Modified'] = 'modified';
+	return $columns;
+}
+add_filter( 'manage_edit-post_sortable_columns', 'modified_column_register_sortable' );
+add_filter( 'manage_edit-page_sortable_columns', 'modified_column_register_sortable' );
+
+?>
