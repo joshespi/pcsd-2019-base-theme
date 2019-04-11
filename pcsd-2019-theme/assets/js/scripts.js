@@ -134,16 +134,24 @@ jQuery(".accordion li").click( function(){
 });
 /*
 =============================================================================================================
-Auto Assign icon
+Auto Link Detection
 =============================================================================================================
 */
+//add icons to links in lists
 jQuery('#mainContent ul li a').each(function(){
 	if (jQuery(this).attr('href').match('.pdf')) {
 		jQuery(this).parent().addClass('pdf');		
+	} else if(jQuery(this).attr('href').match('.xls')) {
+		jQuery(this).parent().addClass('xls');
 	} else if (jQuery(this).attr('href').match('provo.edu')) {
 		jQuery(this).parent().addClass('int');		
 	} else {
 		jQuery(this).parent().addClass('ext');		
 	}
 });
+//Removes the icon for the direcotry page
+jQuery('#mainContent .personalvCard ul li.int').each(function(){
+	jQuery(this).removeClass('int');
+});
+
 
