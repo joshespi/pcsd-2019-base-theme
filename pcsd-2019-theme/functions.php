@@ -28,20 +28,6 @@ function wpbeginner_remove_version() {
 	return '';
 }
 add_filter('the_generator', 'wpbeginner_remove_version');
-/*==========================================================================================
-Customize New Registration email
-============================================================================================*/
-function custom_wp_new_user_notification_email( $wp_new_user_notification_email, $user, $blogname, $blogURL ) {
-	    $wp_new_user_notification_email['subject'] = sprintf( '[%s] New user %s registered.', $blogname, $user->user_login );
-		$wp_new_user_notification_email['message'] = 'Hi,' . "\r\n\r\n";
-		$wp_new_user_notification_email['message'] .= sprintf( "Here's your login information for the new %s.", $blogname). "\r\n\r\n";
-		$wp_new_user_notification_email['message'] .= sprintf( "Username: %s", $user->user_login). "\r\n\r\n";
-	    $wp_new_user_notification_email['message'] .= __('To set your password, visit the following address:') . "\r\n\r\n";
-	    $wp_new_user_notification_email['message'] .= '<' . network_site_url("wp-login.php?action=lostpassword") . ">\r\n\r\n";
-		//$wp_new_user_notification_email['message'] .= wp_login_url() . "\r\n";
-    return $wp_new_user_notification_email;
-}
-add_filter( 'wp_new_user_notification_email', 'custom_wp_new_user_notification_email', 10, 3 );
 
 /*==========================================================================================
 // REMOVE WP EMOJI
