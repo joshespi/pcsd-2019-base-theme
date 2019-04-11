@@ -1256,6 +1256,90 @@ accordion styles
 	display: block;
 	transition: all .35s;
 }
+/*
+================================================================================================================
+Classroom Links Styles
+================================================================================================================
+*/
+#contentArea.classroom-links .page-Content{width: 100%; margin-bottom: 10px;}
+#contentArea.classroom-links .slide {
+	height: 370px;
+}
+#contentArea.classroom-links .teacher-archive-news {
+	text-align: center;
+	background-color: var(--secondary-color);
+	height: 23px;
+	padding-top: 4px;
+}
+#contentArea.classroom-links {
+	width: 100%;
+}
+.classroom-links .flexlinks {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	width: 108%;
+	margin-left: -4%;
+}
+.classroom-links .flexlinks .post {
+	width: 14%;
+	padding-left: 0.14%;
+	padding-right: 0.14%;
+	text-align: center;
+}
+
+.tiles .tile .flexlinks .post {
+	width: 29%;
+	padding: 2%;
+}
+.classroom-links .flexlinks .post:nth-child(even) {background-color: #fafbfd;}
+.classroom-links .flexlinks .post:nth-child(odd) {background-color: #e7e7e9;}
+
+#mainContent .flexlinks .post img {
+	width: 128px;
+	height: auto;
+}
+#mainContent .tile .flexlinks .post img {
+	width: 60px;
+}
+.classroom-links .linkTitle {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 40px;
+}
+.classroom-links ul {
+	margin-left: 0;
+}
+.classroom-links ul li {
+	list-style-position: inside;
+	margin-left: 0;
+}
+@media (max-width: 1250px) {
+	.classroom-links .flexlinks .post {
+		width: 19.7%;
+	}
+}
+@media (max-width: 940px) {
+	.classroom-links .flexlinks .post {
+		width: 33%;
+	}
+}
+@media (max-width: 768px) {
+	.classroom-links .flexlinks .post {
+		width: 33%;
+	}
+}
+@media (max-width: 600px) {
+	.classroom-links .flexlinks .post {
+		width: 100%;
+	}
+}
+@media (max-width: 450px) {
+	.tiles .tile .flexlinks .post {
+		width: 97%;
+	}
+}
 
 /*===============================================================================================================
 low height viewport
