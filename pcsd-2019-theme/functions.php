@@ -459,35 +459,6 @@ function single_post_count_options() {
 /*==========================================================================================
 // ShortCodes
 ============================================================================================*/
-//[span]
-function span_func( $atts ){
-	return "<span>";
-}
-add_shortcode( 'span', 'span_func' );
-
-//[end-span]
-function end_span_func( $atts ){
-	return "</span>";
-}
-add_shortcode( 'end-span', 'end_span_func' );
-
-//[pdf]
-function pdf_func( $atts ){
-	return ' class="pdf" ';
-}
-add_shortcode( 'pdf', 'pdf_func' );
-
-//[xls]
-function xls_func( $atts ){
-	return ' class="xls" ';
-}
-add_shortcode( 'xls', 'xls_func' );
-
-//[ext]
-function ext_func( $atts ){
-	return ' class="ext" ';
-}
-add_shortcode( 'ext', 'ext_func' );
 
 //For Two Column Layout [TwoColumn-Start]
 function twoColumn_func( $atts ){
@@ -540,7 +511,7 @@ function modifiedDate_func( $atts ){
 add_shortcode( 'modified-date', 'modifiedDate_func' );
 
 //======================school camera images=============================
-
+/*
 //---------------Edgemont images-------------------
 function ee_camera_code() {
     	$image = 'https://globalassets.provo.edu/image/construction-images/ee/currentpic.jpg';
