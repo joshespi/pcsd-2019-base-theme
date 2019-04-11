@@ -116,13 +116,16 @@ function pcsd_tutorial_admin_page(){
 					<li><a href="https://provo.edu/wp-content/uploads/2018/12/12-12-2018-new-post-instructions-updated-for-2019-theme.pdf">New Post Instructions</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-formatting-your-post.pdf">Formatting Your Post</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-201-adding-external-links.pdf">Adding External Links</a></li>
+					<li><a href="https://provo.edu/wp-content/uploads/2019/02/An-Explanation-of-Website-Standards.pdf">An Explanation of Website Standards</a></li>
 				</ul>
 			<h3>Images &amp; Documents</h3>
 				<ul>
 					<li><a href="https://provo.edu/wp-content/uploads/2018/12/12-12-2018-image-resources-updated-for-2019-theme.pdf">Image Resources</a></li>
 					
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-adding-pdfs.pdf">Adding PDFs</a></li>
+					
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-file-naming-standards.pdf">File Naming Standards</a></li>
+					<li><a href="https://docs.google.com/document/d/1P-ZmnvAQ1mymrFX6DvxjQxdD2Y3X9bAMz2rm5wnd9lY/edit?usp=sharing">Adding Videos</a></li>
 				</ul>
 			<h3>Teacher Tutorials</h3>
 				<ul>
