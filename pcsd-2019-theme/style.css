@@ -367,10 +367,12 @@ nav > ul > li > a {
 }
 .mega-menu .dropDownColumn ul li {list-style: none;}
 h2 img {
-	width: 27px;
-	height: 27px;
+	width: 40px;
+	height: 40px;
 	margin-right: 10px;
+	vertical-align: middle;
 }
+
 @media (max-height: 1066px) {
 	.mega-menu .dropDownColumn {width: 30%;padding: 1%;}
 	.mega-menu .dropDownColumn ul {margin-left: 30px;}
@@ -592,8 +594,9 @@ News Slider With Tiles
 	position:relative;
 	overflow-y:scroll;
 }
-.no-slider .currentContent {
+.no-slider .currentContent,.currentContent.no-slider  {
 	width: 96%;
+	height:auto;
 }
 .tile-page .slider {
 	width:50%;
@@ -783,7 +786,6 @@ Search Results Page
 	margin-top: 10px;
 }
 */
-
 /*
 --------------------------------------------------------------------
 Cludo Search
