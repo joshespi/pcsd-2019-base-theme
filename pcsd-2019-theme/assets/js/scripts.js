@@ -132,15 +132,11 @@ accordion
 jQuery(".accordion li").click( function(){
 	jQuery(this).toggleClass("active");
 });
-
-
-
-
 /*
 =============================================================================================================
 Auto Assign icon
 =============================================================================================================
-
+*/
 jQuery('#mainContent ul li a').each(function(){
 	if (jQuery(this).attr('href').match('.pdf')) {
 		jQuery(this).parent().addClass('pdf');		
@@ -149,7 +145,5 @@ jQuery('#mainContent ul li a').each(function(){
 	} else {
 		jQuery(this).parent().addClass('ext');		
 	}
-
 });
 
-*/
