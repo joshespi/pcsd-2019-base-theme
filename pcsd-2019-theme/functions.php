@@ -186,6 +186,15 @@ function change_paste_as_text($mceInit, $editor_id){
 	return $mceInit;
 }
 add_filter('tiny_mce_before_init', 'change_paste_as_text', 1, 2);
+add_filter('tiny_mce_before_init', 'tiny_mce_remove_unused_formats' );
+/*
+ * Modify TinyMCE editor to remove H1, H4,H5,H5, PRE.
+ */
+function tiny_mce_remove_unused_formats($init) {
+	// Add block format elements you want to show in dropdown
+	$init['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;';
+	return $init;
+}
 /*==========================================================================================
 Breadcrumbs
 ============================================================================================*/
