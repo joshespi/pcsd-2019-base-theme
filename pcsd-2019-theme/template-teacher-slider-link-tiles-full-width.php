@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Teacher - Slider With Link Tiles full width
+	Template Name: Teacher - Slider With Link Tiles - Full Width
 */
 
 	get_header();

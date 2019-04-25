@@ -1,7 +1,7 @@
 <?php get_header(); 
 	
 	/*
-	Template Name: Teacher - Links full width
+	Template Name: Teacher - Single Category Links - Full Width
 */
 	
 ?>
@@ -38,7 +38,10 @@
 			   			while ( $links_query->have_posts() ) : $links_query->the_post(); ?>
 			   				<article class="post">
 						   		<p class="linkTitle"><?php the_title(); ?></p>
-						   		<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
+						   		<?php 
+								   		if(get_field('link_image')) { ?>
+								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
+								<?php 	} ?>
 						   		<ul>
 							   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
 						   		</ul>
