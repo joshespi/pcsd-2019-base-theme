@@ -1134,27 +1134,31 @@ link marking
 /*For adding icon into for in line links*/
 #mainContent p a:after {
 	content:' ';
-	display: inline;
-	margin-left:3px;
+	display: inline-block;
+	margin-left: 3px;
 	width:.7em;
 	height:.7em;
 	background-size:contain;
-	background-image:url(../pcsd-2019-theme/assets/icons/external-white.png);
+	background-image:url(../pcsd-2019-theme/assets/icons/external-link-gray.svg);
 }
 #mainContent p a[href*="provo.edu"]:after {
-	content:' ';
+/*	content:' ';
 	display:inline-block;
-	margin-left:3px;
+	
 	width:.7em;
 	height:.7em;
-	background-size:contain;
+	background-size:contain; */
+	display: inline;
 	background-image:url(../pcsd-2019-theme/assets/icons/file-blue.svg);
 }
 #mainContent p a[href*="pdf"]:after {
 	content:' (PDF)';
+	
+	background-image: none;
 }
 #mainContent p a[href*="xls"]:after {
 	content:' (XLS)';
+	background-image: none;
 }
 /* these are so that the listed links have a the right icon once the javascript gives them a class*/
 ul li.int {
