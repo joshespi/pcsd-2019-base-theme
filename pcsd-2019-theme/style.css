@@ -2,7 +2,7 @@
 	Theme Name: Provo City School District 2019
 	Author: District Web Team
 	Author URI: https://employee.provo.edu/technology/
-	Version: 1.0
+	Version: 1
 */
 /*================================================================================================================
 CSS Reset
@@ -1297,8 +1297,8 @@ Classroom Links Styles
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	width: 108%;
-	margin-left: -4%;
+/*	width: 108%;
+	margin-left: -4%; */
 }
 .classroom-links .flexlinks .post {
 	width: 14%;
@@ -1311,12 +1311,12 @@ Classroom Links Styles
 	width: 29%;
 	padding: 2%;
 }
-.classroom-links .flexlinks .post:nth-child(even) {background-color: #fafbfd;}
-.classroom-links .flexlinks .post:nth-child(odd) {background-color: #e7e7e9;}
+.classroom-links .flexlinks .post:nth-child(even) {background-color: var(--even-tile-bg-color);}
+.classroom-links .flexlinks .post:nth-child(odd) {background-color: var(--odd-tile-bg-color);}
 
 #mainContent .flexlinks .post img {
-	width: 128px;
-	height: auto;
+	width: 100px;
+	height: 100px;
 }
 #mainContent .tile .flexlinks .post img {
 	width: 60px;
@@ -1410,9 +1410,7 @@ low height viewport
 	.mobile-menu {
 		z-index: 3000;
 		position: absolute;
-		width: 100vw;
-		
-		
+		width: 100vw;	
 	}
 	#mainSidebar {
 		margin-top: 18px;
