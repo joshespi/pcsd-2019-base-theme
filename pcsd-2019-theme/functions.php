@@ -126,6 +126,7 @@ function pcsd_tutorial_admin_page(){
 					
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-file-naming-standards.pdf">File Naming Standards</a></li>
 					<li><a href="https://docs.google.com/document/d/1P-ZmnvAQ1mymrFX6DvxjQxdD2Y3X9bAMz2rm5wnd9lY/edit?usp=sharing">Adding Videos</a></li>
+					<li><a href="https://docs.google.com/document/d/1J418MQ561-Vo1xQH4s53pkAqlrcC5RMHQQxlcA51bhM/edit?usp=sharing">Adding a Gallery</a></li>
 				</ul>
 			<h3>Teacher Tutorials</h3>
 				<ul>
