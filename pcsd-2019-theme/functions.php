@@ -117,6 +117,7 @@ function pcsd_tutorial_admin_page(){
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-2017-formatting-your-post.pdf">Formatting Your Post</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2017/08/08-18-201-adding-external-links.pdf">Adding External Links</a></li>
 					<li><a href="https://provo.edu/wp-content/uploads/2019/02/An-Explanation-of-Website-Standards.pdf">An Explanation of Website Standards</a></li>
+					<li><a href="https://docs.google.com/document/d/1mCYeM9SHFtToaCN-YaWeAdCovRNrqs5GCfmTGLr04tU/edit?usp=sharing">Creating and Using Classroom Links</a></li>
 				</ul>
 			<h3>Images &amp; Documents</h3>
 				<ul>
