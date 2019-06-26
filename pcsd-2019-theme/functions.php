@@ -587,4 +587,29 @@ function modified_column_register_sortable( $columns ) {
 add_filter( 'manage_edit-post_sortable_columns', 'modified_column_register_sortable' );
 add_filter( 'manage_edit-page_sortable_columns', 'modified_column_register_sortable' );
 
+/*-------------------------------------------------------*/
+/* [district_school_year_calendar]
+/*-------------------------------------------------------*/
+
+function district_school_year_calendar_pull() { 
+	// create a new cURL resource
+	$schoolyear_cal = curl_init();
+	// set URL and other appropriate options
+	curl_setopt($schoolyear_cal, CURLOPT_URL, 'https://globalassets.provo.edu/globalpages/district-school-year-calendar.html');
+	//ignores the header from the request
+	curl_setopt($schoolyear_cal, CURLOPT_HEADER, 0);
+	//sets a timeout incase it cant find the file so it doens't hang forever
+	curl_setopt($schoolyear_cal, CURLOPT_TIMEOUT, 12);
+	//so that it doesn't print the results right away and we can control where the results are printed
+	curl_setopt($schoolyear_cal, CURLOPT_RETURNTRANSFER, TRUE);
+	// grab URL and pass it to the browser
+	$result = curl_exec($schoolyear_cal);
+	// close cURL resource, and free up system resources
+	curl_close($schoolyear_cal);
+	//prints results
+	return $result;
+
+}
+add_shortcode('district_school_year_calendar', 'district_school_year_calendar_pull');
+
 ?>
