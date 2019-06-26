@@ -113,15 +113,15 @@ table td {
 }
 .gallery-item {
 	overflow: hidden;
-	height: 100px;
-	padding-top: -50%;
-}
-.gallery-columns-3 .gallery-item {
-	height: 150px;
+	height: 200px;
+	
 }
 .gallery-item img{
 	border: 2px solid #ccc;
 	margin: 5px 10px 5px 10px;
+}
+.gallery-size-large .gallery-item, .gallery-size-full .gallery-item {
+	height: auto;
 }
 #mainContent form textarea, #mainContent form input {
 	border: #ccc solid 1px;
