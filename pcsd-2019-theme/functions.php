@@ -614,4 +614,118 @@ function district_school_year_calendar_pull() {
 }
 add_shortcode('district_school_year_calendar', 'district_school_year_calendar_pull');
 
-?>
+/*-------------------------------------------------------*/
+/* Add Length Column to the Wordpress Dashboard
+/*-------------------------------------------------------*/
+//For Posts
+
+	//Add the Length column, next to the Title column:
+
+add_filter('manage_post_posts_columns', function ( $columns ) 
+{
+    $_columns = [];
+
+    foreach( (array) $columns as $key => $label )
+    {
+        $_columns[$key] = $label; 
+        if( 'title' === $key )
+            $_columns['wpse_post_content_length'] = __( 'Length' );     
+    }
+    return $_columns;
+} );
+
+	//Fill that column with the post content length values:
+
+add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id ) 
+{
+    if ( $column_name == 'wpse_post_content_length')
+        echo mb_strlen( get_post( $post_id )->post_content );
+
+}, 10, 2 );
+
+	//Make our Length column orderable:
+
+add_filter( 'manage_edit-post_sortable_columns', function ( $columns ) 
+{
+  $columns['wpse_post_content_length'] = 'wpse_post_content_length';
+  return $columns;
+} );
+	//Finally we implement the ordering through the posts_orderby filter:
+
+add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
+{
+    $_orderby = $q->get( 'orderby' );
+    $_order   = $q->get( 'order' );
+
+    if( 
+           is_admin() 
+        && $q->is_main_query() 
+        && 'wpse_post_content_length' === $_orderby 
+        && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
+    ) {
+        global $wpdb;
+        $orderby = " LENGTH( {$wpdb->posts}.post_content ) " . $_order . " ";
+    }
+    return $orderby;
+}, 10, 2 );
+
+//For Pages
+
+	//Add the Length column, next to the Title column:
+
+add_filter('manage_page_posts_columns', function ( $columns ) 
+{
+    $_columns = [];
+
+    foreach( (array) $columns as $key => $label )
+    {
+        $_columns[$key] = $label; 
+        if( 'title' === $key )
+            $_columns['wpse_post_content_length'] = __( 'Length' );     
+    }
+    return $_columns;
+} );
+
+	//Fill that column with the post content length values:
+
+add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id ) 
+{
+    if ( $column_name == 'wpse_post_content_length')
+        echo mb_strlen( get_post( $post_id )->post_content );
+
+}, 10, 2 );
+
+	//Make our Length column orderable:
+
+add_filter( 'manage_edit-page_sortable_columns', function ( $columns ) 
+{
+  $columns['wpse_post_content_length'] = 'wpse_post_content_length';
+  return $columns;
+} );
+	//Finally we implement the ordering through the posts_orderby filter:
+
+add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
+{
+    $_orderby = $q->get( 'orderby' );
+    $_order   = $q->get( 'order' );
+
+    if( 
+           is_admin() 
+        && $q->is_main_query() 
+        && 'wpse_post_content_length' === $_orderby 
+        && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
+    ) {
+        global $wpdb;
+        $orderby = " LENGTH( {$wpdb->posts}.post_content ) " . $_order . " ";
+    }
+    return $orderby;
+}, 10, 2 );
+//Notes
+
+//If you want to target other post types, than we just have to modify the
+
+//manage_post_posts_columns         -> manage_{POST_TYPE}_posts_columns
+//manage_post_posts_custom_column   -> manage_{POST_TYPE}_posts_custom_column
+//manage_edit-post_sortable_columns -> manage_edit-{POST_TYPE}_sortable_columns
+
+//where POST_TYPE is the wanted post type.
