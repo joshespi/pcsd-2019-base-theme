@@ -80,9 +80,14 @@ iframe {
 	display:none;
 }
 .twoColumn {
-	width: 45%;
+	width: 46%;
 	float: left;
 	padding: 1% 2.5% 1% 2.5%;
+}
+.video2column {
+	width: 45%;
+	float: left;
+	margin: 0 2% 10px 2%;
 }
 .threeColumn {
 	width: 29%;
