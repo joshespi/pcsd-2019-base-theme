@@ -42,10 +42,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -69,10 +79,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -96,10 +116,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -123,10 +153,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -150,10 +190,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -177,10 +227,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -204,10 +264,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -231,10 +301,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -258,10 +338,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
@@ -285,10 +375,20 @@
 							   		<?php 
 								   		if(get_field('link_image')) { ?>
 								   			<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
-								   <?php } ?>
-							   		<ul>
-								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
-							   		</ul>
+								   <?php } 
+									if(get_field('use_local_pdf')) {
+										?>
+										<ul>
+											<li><a href="<?php the_field('use_local_pdf'); ?>"><?php the_title(); ?></a></li>
+						   				</ul>
+										<?php
+									} else { ?>
+										<ul>
+									   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
+								   		</ul> 
+								   		<?php
+									}
+								?>
 							   		<p><?php the_field('additional_info'); ?></p>
 							   	</article>
 							<?php endwhile;
