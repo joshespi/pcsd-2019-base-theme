@@ -154,7 +154,7 @@ add_action( 'post-upload-ui', 'pcsd_media_upload_tips' );
 function pcsd_media_upload_tips(){
 	?>
 		<h2>Your file will be processed by the server. This may take a few minutes depending on the size of the file.</h2>
-		<h3>Allowed File types: jpeg, mp3, mp4, pdf, mpeg, png, mov, wma</h3>
+		<h3>Allowed File types: jpeg, mp3, mp4, pdf, mpeg, png</h3>
 	<?php
 };
 
