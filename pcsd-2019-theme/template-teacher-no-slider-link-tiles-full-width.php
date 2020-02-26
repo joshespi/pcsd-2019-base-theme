@@ -39,7 +39,7 @@
 				   			//the loop
 				   			while ( $links_query->have_posts() ) : $links_query->the_post(); ?>
 				   				<article class="post">
-							   		<p class="linkTitle"><?php the_title(); ?></p>
+							   		
 							   		<img src="<?php the_field('link_image'); ?>" alt="<?php the_title(); ?> logo" />
 							   		<ul>
 								   		<li><a href="<?php the_field('link_url'); ?>"><?php the_title(); ?> Website</a></li>
